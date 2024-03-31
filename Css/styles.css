@@ -1037,3 +1037,136 @@ textarea {
     text-align: center;
     color: var(--white);
 }
+.js-menu-container {
+    display: none;
+}
+
+.js-menu-container.is-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--white);
+    padding: 80px 35px 40px 40px;
+    z-index: 1;
+}
+
+.js-close-menu {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    color: var(--navy-blue);
+    background-color: var(--cornflower);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border-style: none;
+    margin-bottom: 24px;
+}
+
+.js-close-menu:hover {
+    color: var(--ocean);
+    background-color: var(--white);
+}
+
+.mobile-menu-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mobile-navbar-list-item {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-blue);
+}
+
+.mobile-navbar-list-item:hover {
+    color: var(--ocean);
+}
+
+.mobile-menu-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 284px;
+    margin-bottom: 48px;
+}
+
+.mobile-menu-contact a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+    transition: font-size var(--transition), color var(--transition);
+}
+
+.mobile-menu-contact a:hover {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--iris);
+}
+
+.mobile-social-links-list {
+    display: flex;
+    gap: 56px;
+}
+
+@media screen and (min-width: 1158px) {
+    .icon-benefit {
+        width: 64px;
+        height: 64px;
+    }
+
+    .icon-benefit-background {
+        width: 264px;
+        height: 112px;
+        background: var(--cloud);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .js-open-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1158px) {
+    .what-are-we-doing-section {
+        display: none;
+    }
+
+    .section-list-item {
+        margin-bottom: 8px;
+    }
+
+    .icon-client-background {
+        margin-bottom: 8px;
+    }
+
+    .icon-client-background {
+        flex-grow: 1;
+        flex-basis: 175px;
+    }
+}
